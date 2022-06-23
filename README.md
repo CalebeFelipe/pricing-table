@@ -44,9 +44,9 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:CalebeFelipe/snake-game.git
+$ git clone git@github.com:CalebeFelipe/pricing-table.git
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd snake-game
+$ cd pricing-table
 # Vá para a pasta da aplicação Front End
 $ cd web
 # Instale as dependências
