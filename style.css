@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap');
+
+
+/* VARIABLE*/
+:root {
+  --primary-color: blue;
+  --secundary-color: white;
+  --font-bold: 700;
+  --font-semi-bold: 600;
+  --font-light: 400;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* BASE */
+
+body {
+  background: black;
+  color: var(--secundary-color);
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.container-title {
+  color: var(--primary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* LAYOUT */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Titles */
+
+.container h1 {
+  font-size: 5rem;
+  font-weight: var(--font-bold);
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: var(--font-light);
+}
+
+/* CARDS */
+
+.container .container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem auto 0;
+  gap: 3rem;
+  justify-self: center;
+}
+
+.container .container-cards .cards{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 1rem;
+  height: 23rem;
+  width: 14rem;
+  margin: 0 auto;  
+}
+
+.container .container-cards .cards:hover {
+  transform: scale(1.07);
+}
+
+.container .container-cards .cards:nth-child(odd) {
+  background: var(--secundary-color);
+} 
+
+.container .container-cards .cards:nth-child(even){
+  background: var(--primary-color);
+}
+
+.container .container-cards .cards .price-card {
+  font-size: 1.8rem;
+  font-weight: var(--font-semi-bold);
+  height: 50%;
+  width: 100%;
+  padding: 4rem;
+  clip-path: polygon(110% 0, 100% 100%, 50% 75%, 0 100%, 0 0);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container .container-cards .cards:nth-child(odd) .price-card {
+  background: var(--primary-color);
+}
+
+.container .container-cards .cards:nth-child(even) .price-card {
+  background: var(--secundary-color);
+  color: var(--primary-color); 
+}
+
+.container .container-cards .cards .price-card span {
+  font-size: 1.1rem;
+  position: absolute;
+  transform: translate(-25px, -5px);
+}
+
+.container .container-cards .cards .description-card {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  gap: 1.7rem;
+}
+
+.container .container-cards .cards:nth-child(odd) .description-card {
+  color: var(--primary-color);
+}
+
+.container .container-cards .cards .description-card .plan-card {
+  font-weight: var(--font-bold);
+  font-size: 1.5rem;
+  margin-top: .7rem;
+}
+
+.container .container-cards .cards .description-card .recommended {
+  display: inline-block;
+  font-weight: var(--font-bold);
+  border-radius: 5rem;
+  background: var(--secundary-color);
+  color: var(--primary-color);
+  padding: .1rem .5rem;
+  margin: 0 auto 2rem auto ;
+}
+
